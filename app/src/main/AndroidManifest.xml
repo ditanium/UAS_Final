@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.corporation.fallen.uas">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Contact Profile App"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.corporation.fallen.uas.MainActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.corporation.fallen.uas.MenuKontak"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.corporation.fallen.uas.SplashScreen"
+            android:theme="@style/SplashScreenCustom"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.corporation.fallen.uas.LoginActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.corporation.fallen.uas.WelcomeScreen"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.corporation.fallen.uas.RegisterActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.corporation.fallen.uas.MenuDaftarTeman"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.corporation.fallen.uas.TemanActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.corporation.fallen.uas.DetailActivity"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>
